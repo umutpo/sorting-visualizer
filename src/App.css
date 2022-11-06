@@ -1,0 +1,59 @@
+.Stack {
+  margin: 4%;
+  display: flex;
+}
+
+.All-sections {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Stack {
+  margin: 4%;
+  margin-top: 0%;
+}
+
+.HeaderTitle {
+  color: #61dafb;
+  padding-top: 1%;
+  padding-bottom: 10%;
+}
+
+.StepCounterTitle {
+  color: #6170fb;
+  margin-bottom: 0%;
+}
+
+.toggleButton {
+  color: white;
+}
+
+.OutputText {
+  font-weight: bolder;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+}
+
+.list > div {
+  flex: 1 1 auto;
+  margin: 5px;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "array_ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.0",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "monaco-editor": "^0.30.1",
+    "monaco-editor-webpack-plugin": "^6.0.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.8",
+    "react-dom": "^17.0.2",
+    "react-flip-toolkit": "^7.0.13",
+    "react-icons": "^4.3.1",
+    "react-monaco-editor": "^0.46.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "serve": "gunicorn api.app:app -b 0.0.0.0:5001 --daemon",
+    "kill-py": "kill $(ps aux | grep '[g]unicorn' | awk '{print $2}')",
+    "install-py": "pip install -r api/requirements.txt",
+    "fullstack": "npm run serve && npm run start && npm run kill-py"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5001"
+}
