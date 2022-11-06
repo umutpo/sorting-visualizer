@@ -1,4 +1,5 @@
 # Sorting Visualizer
+A simple sorting visualizer for in-place algorithms
 
 ## Instructions
 Please install Python >= 3.8 for best results. Python 3.8.12 was used for this project. Using a different version of Python may work but please note it could cause errors and is NOT recommended.
@@ -18,11 +19,8 @@ Run the backend and frontend using npm
 npm run fullstack
 ```
 
-See [package.json](./package.json) for other startup/dev scripts.
-
-Built for 1080p, use 1.25x for 1440p and 0.8x for 720p displays.
-
-<br>
+## Project Background
+This project was done by a group of 5 students for UBC CPSC410 course in November 2021.
 
 ## Notes About Sorting Algorithms
 The sorting algorithms must be in-place in order for them to correctly visualized. Following are the fully-tested, generic sorting algorithms that works smoothly in our tool:
